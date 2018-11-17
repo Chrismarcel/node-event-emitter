@@ -13,7 +13,7 @@ class Emitter {
 
   on(type, listener) {
     this.events[type] = this.events[type] || [];
-    this.type.push(listener);
+    this.events[type].push(listener);
   }
 
   emit(type) {
